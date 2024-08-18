@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .endpoint {
+            margin-bottom: 20px;
+        }
+        .endpoint h2 {
+            color: #555;
+        }
+        .endpoint pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .endpoint code {
+            background-color: #eaeaea;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<h1>API Documentation</h1>
+
+<div class="endpoint">
+    <h2>1. Authentication API</h2>
+    <p>Base URL: <code>/api/v1/auth</code></p>
+    <pre>
+GET /api/v1/auth/login
+POST /api/v1/auth/logout
+POST /api/v1/auth/register
+        </pre>
+    <p>Authentication endpoints for user login, logout, and registration.</p>
+</div>
+
+<div class="endpoint">
+    <h2>2. User API</h2>
+    <p>Base URL: <code>/api/v1/users</code></p>
+    <pre>
+GET /api/v1/users
+GET /api/v1/users/{id}
+POST /api/v1/users
+PUT /api/v1/users/{id}
+DELETE /api/v1/users/{id}
+        </pre>
+    <p>Endpoints for managing users. Includes operations to list, retrieve, create, update, and delete users.</p>
+</div>
+
+<div class="endpoint">
+    <h2>3. Voting API</h2>
+    <p>Base URL: <code>/api/v1/votings</code></p>
+    <pre>
+GET /api/v1/votings
+GET /api/v1/votings/{id}
+POST /api/v1/votings
+PUT /api/v1/votings/{id}
+DELETE /api/v1/votings/{id}
+        </pre>
+    <p>Endpoints for managing votes. Includes operations to list, retrieve, create, update, and delete votes.</p>
+</div>
+</body>
+</html>

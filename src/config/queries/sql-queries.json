@@ -1,0 +1,13 @@
+{
+  "LOGIN": "SELECT * FROM :tableName WHERE email = :username",
+  "CREATE_USER": "INSERT INTO `voting_platform_db`.`:tableName` (name,username,email,password) VALUES(':name', ':username', ':email', ':password')",
+  "GET_USER_BY_ID": "SELECT * FROM `voting_platform_db`.`:tableName` WHERE id  = :id",
+  "UPDATE_PASSWORD": "UPDATE :tableName SET password = :password WHERE email = :username",
+  "GET_USER_BY_EMAIL": "SELECT * FROM `voting_platform_db`.`:tableName` WHERE email = ':email'",
+  "GET_ALL_USERS": "SELECT * FROM :tableName",
+  "DELETE_USER": "DELETE FROM :tableName WHERE email = :username",
+  "UPDATE_USER": "UPDATE :tableName SET name = :name, email = :email WHERE email = :username WHERE email = :email",
+  "GET_USER_BY_USERNAME": "SELECT * FROM :tableName WHERE username = :username",
+  "CHANGE_PASSWORD": "UPDATE :tableName SET password = :newPassword WHERE email = :email",
+  "GET_USER_BY_EMAIL_AND_PASSWORD": "SELECT * FROM :tableName WHERE email = :email AND password = :password"
+}
